@@ -3,11 +3,18 @@ var menu = $(".hamburger-menu");
 var openmenu = $(".fa-bars");
 
 openmenu.click( function() {
-  menu.slideDown();
+  menu.addClass("active")
 });
+// openmenu.click( function() {
+//   menu.slideDown();
+// });
+//
+var closemenu = $(".close")
 
-var closemenu = $(".fa-times")
-
-closemenu.click(function() {
-  menu.slideUp();
-})
+closemenu.click( function() {
+  menu.removeClass("active")
+});
+//
+// closemenu.click(function() {
+//   menu.slideUp();
+// })
